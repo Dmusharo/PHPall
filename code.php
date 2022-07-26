@@ -322,6 +322,79 @@ echo $fr;
 $tf = 105;
 $tc = ($tf - 32) * 5/9;
 echo $tc;
+//Lesson 22. Task 1
+$array = ['a', 'b', 'c'];
+echo $array;
+var_dump($array);
+//Lesson 22. Task 2
+var_dump($array[0]);
+var_dump($array[1]);
+var_dump($array[2]);
+//Lesson 22. Task 3
+$a = ['a', 'b', 'c', 'd'];
+var_dump($a[0], '+', $a[1], '+', $a[2], '+', $a[3]);
+//Lesson 22. Task 4
+$a = [1, 2, 3];
+var_dump($a[0] + $a[1] + $a[2]);
+//Lesson 22. Task 5
+$a = [2, 5, 3, 9];
+$result = ($a[0] * $a[1]) + ($a[2] * $a[3]);
+var_dump($result);
+//Lesson 23. Task 1
+$a = [1 => 'a', 2 => 'b', 3 => 'c'];
+echo $a[1], $a[2], $a[3];
+//Lesson 23. Task 2
+$a = [1 => 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+echo $a[2];
+//Lesson 23. Task 3
+$user = ['name' => 'Anton', 'surname' => 'Dudnik', 'patronymic' => 'Valeryevich'];
+echo $user['surname'], ' ', $user['name'], ' ', $user['patronymic'];
+//Lesson 23. Task 4
+$date = ['day' => 26, 'months' => 'july', 'year' => 2022];
+echo $date['day'], '-', $date['months'], '-', $date['year'];
+//Lesson 24. Task 1
+$list = [2 => 'name?', 1 => 'your', 0 => 'What"s'];
+echo $list[0], ' ', $list[1], ' ', $list[2];
+//Lesson 25. Task 1
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr);
+//Lesson 25. Task 2
+$arr = ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4];
+echo count($arr);
+//Lesson 25. Task 3
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo $arr[count($arr) -1];
+//Lesson 25. Task 4
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo $arr[count($arr) -2];
+//Lesson 26. Task 1
+$arr = ['a' => 1, 'b' => 2, 'c' => 3];
+$arr['a'] = 7;
+$arr['b'] = 7;
+$arr['c'] = 7;
+var_dump($arr);
+//Lesson 26. Task 2
+$arr = ['a' => 1, 'b' => 2, 'c' => 3];
+$arr['a'] += 3;
+$arr['b'] += 3;
+$arr['c'] += 3;
+var_dump($arr);
+//Lesson 26. Task 3
+$arr = ['a' => 1, 'b' => 2, 'c' => 3];
+
+$arr['a']++;
+$arr['a']++;
+$arr['b']--;
+$arr['c']--;
+$arr['c']--;
+
+var_dump($arr);
+
+
+
+
+//Lesson 23. Task 3
+//Lesson 23. Task 4
 
 
 
