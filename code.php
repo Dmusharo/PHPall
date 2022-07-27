@@ -389,14 +389,446 @@ $arr['c']--;
 $arr['c']--;
 
 var_dump($arr);
+//Lesson 27. Task 1
+$arr = [];
+$arr[] = 1;
+$arr[] = 2;
+$arr[] = 3;
+$arr[] = 4;
+$arr[] = 5;
+var_dump($arr);
+//Lesson 27. Task 2
+$arr = [1, 2, 3];
+$arr[] = 4;
+$arr[] = 5;
+var_dump($arr);
+//Lesson 27. Task 3
+$arr = [];
+$arr['day'] = 26;
+$arr['months'] = 'July';
+$arr['Year'] = 2022;
+var_dump($arr);
+//Lesson 28. Task 1
+$arr = [1, 2, 3, 4, 5];
+$key1 = 1;
+$key2 = 2;
+echo $arr[$key1] + $arr[$key2];
+//Lesson 28. Task 2
+$arr = ['a' => 1, 'b' => 2, 'c' => 3];
+$key = 'b';
+echo $arr[$key];
+//Lesson 29. Task 1
+$test = 1;
+if ($test > 10) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 29. Task 2
+$test = 1;
+if ($test < 10) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 29. Task 3
+$test = 1;
+if($test >= 10) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 29. Task 4
+$test = 1;
+if($test <=10) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 30. Task 1
+$test1 = '3';
+$test2 = '3';
 
+if ($test1 == $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 2
+$test1 = '3';
+$test2 = '3';
 
+if ($test1 === $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 3
+$test1 = 3;
+$test2 = '3';
 
+if ($test1 == $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 4
+$test1 = 3;
+$test2 = '3';
 
-//Lesson 23. Task 3
-//Lesson 23. Task 4
+if ($test1 === $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 5
+$test1 = 3;
+$test2 = 3;
 
+if ($test1 === $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 6
+$test1 = '3';
+$test2 = '3';
 
+if ($test1 != $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 7
+$test1 = '3';
+$test2 = '3';
+
+if ($test1 !== $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 8
+$test1 = 3;
+$test2 = '3';
+
+if ($test1 != $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 9
+$test1 = 3;
+$test2 = '3';
+
+if ($test1 !== $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 30. Task 10
+$test1 = 3;
+$test2 = 2;
+
+if ($test1 !== $test2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 1
+$num = 3;
+if ($num > 0 and $num < 5) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 31. Task 2
+$num = 15;
+if($num >= 10 and $num <= 20) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 31. Task 3
+$num1 = 5;
+$num2 = 7;
+if($num1 <= 1 and $num2 >= 3) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 31. Task 4
+$num1 = -10;
+$num2 = -10;
+
+if ($num1 >= 0 or $num2 >= 0) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 5
+$num1 = 0;
+$num2 = 0;
+
+if ($num1 >= 0 or $num2 >= 0) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 6
+$num1 = 0;
+$num2 = 5;
+
+if ($num1 >= 0 or $num2 >= 0) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 7
+$num1 = 5;
+$num2 = 5;
+
+if ($num1 >= 0 or $num2 >= 0) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 8
+$num1 = -5;
+$num2 = 15;
+
+if ($num1 >= 0 or $num2 >= 0) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 9
+$num = 1;
+
+if ($num == 0 or $num == 1) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 10
+$num = 2;
+
+if ($num == 0 or $num == 1) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 11
+$num = 2;
+
+if ($num == 0 or $num == 1 or $num == 2) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 12
+$num = 3;
+
+if ($num > 5 and $num < 10 or $num == 20) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 13
+$num = 3;
+
+if ($num > 5 or $num > 0 and $num < 3) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 31. Task 14
+$num = 3;
+
+if ($num == 9 or $num > 10 and $num < 20 or $num > 20 and $num < 30) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 32. Task 1
+if (!($num1 >= 0 or $num2 <= 10)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 1
+$test = true;
+if($test == true) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 33. Task 2
+$test = true;
+if($test == false) {
+    echo '+';
+}else {
+    echo '-';
+}
+//Lesson 33. Task 3
+$test = 1;
+
+if ($test == true) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 4
+$test = 0;
+
+if ($test == true) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 5
+$test = 1;
+
+if ($test == false) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 6
+$test = 1;
+
+if ($test != true) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 7
+$test = '';
+
+if ($test == false) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 8
+//test;
+//if (test == true) {
+//    echo '+';
+//} else {
+//    echo '-';
+//}Uncaught Error: Undefined constant "test"
+//Lesson 33. Task 9
+$test = true;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 10
+$test = true;
+
+if (!$test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 11
+$test = true;
+
+if (!$test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 12
+$test = true;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 13
+$test = 3;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 14
+$test = 'abc';
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 15
+$test = '';
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 16
+//$test = 3 * 'abc';
+//
+//if ($test) {
+//    echo '+';
+//} else {
+//    echo '-';
+//}Unsupported operand types: int * string
+//Lesson 33. Task 17
+$test = null;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 18
+$test = false;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 19
+$test;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 20
+$test = 0;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 21
+$test = '0';
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 33. Task 22
+$test = -1;
+
+if ($test) {
+    echo '+';
+} else {
+    echo '-';
+}
 
 
 
