@@ -234,3 +234,46 @@ for ($i = 0; $i < strlen($number); $i++) {
 }
 echo "sum is {$sum}";
 //Lesson 39. Task 5
+$str = '468249';
+if (($str[0]+$str[1]+$str[2]) == ($str[3]+$str[4]+$str[5]))
+    echo 'yes';
+else
+    echo 'no';
+//Lesson 40. Task 1
+$num = 3;
+switch ($num) {
+    case '1':
+        echo 'winter';
+    break;
+    case '2':
+        echo 'spring';
+    break;
+    case '3':
+        echo 'summer';
+    break;
+    case '3':
+        echo 'autumn';
+}
+//Lesson 41. Task 1
+$num = 2;
+$result = $num >= 0 ? 1: -1;
+echo $result;
+//lesson 42. Task 1
+//$user = ['name' => 'john', 'age' => 30];
+//$name = $user['name'] ?? 'unknown';
+//Coalesce operator is only allowed since php 7.0
+//lesson 42. Task 2
+//Coalesce operator is only allowed since php 7.0
+//Lesson 43. Task 1
+$a = 2 * (3 - 1);
+$b = 6 - 2;
+var_dump($a == $b);
+//Lesson 43. Task 2
+$a = 5 * (7 - 4);
+$b = 1 + 2 + 7;
+var_dump($a > $b);
+//Lesson 43. Task 3
+$a = 2 ** 4;
+$b = 4 ** 2;
+var_dump($a != $b);
+
