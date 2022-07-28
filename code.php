@@ -829,8 +829,63 @@ if ($test) {
 } else {
     echo '-';
 }
+//Lesson 34. Task 1
+$test = 0;
 
+if (isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 2
+$test = null;
 
+if (!isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 3
+$test = null;
 
+if (isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 4
+if (!isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 5
+$test = '';
 
+if (isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 6
+if (!isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 7
+$test = false;
 
+if (isset($test)) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Lesson 34. Task 8
+//$arr = [1, 2, 3, 4, 5];
+//if (isset($arr[])) {
+//    echo '+';
+//} else {
+//    echo '-';
+//}
+//Fatal error: Cannot use [] for reading
