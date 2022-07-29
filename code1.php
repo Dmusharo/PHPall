@@ -258,13 +258,14 @@ switch ($num) {
 $num = 2;
 $result = $num >= 0 ? 1: -1;
 echo $result;
-//lesson 42. Task 1
-//$user = ['name' => 'john', 'age' => 30];
-//$name = $user['name'] ?? 'unknown';
-//Coalesce operator is only allowed since php 7.0
-//lesson 42. Task 2
-//Coalesce operator is only allowed since php 7.0
-//Lesson 43. Task 1
+/*lesson 42. Task 1
+$user = ['name' => 'john', 'age' => 30];
+$name = $user['name'] ?? 'unknown';
+Coalesce operator is only allowed since php 7.0
+lesson 42. Task 2
+Coalesce operator is only allowed since php 7.0
+Lesson 43. Task 1
+*/
 $a = 2 * (3 - 1);
 $b = 6 - 2;
 var_dump($a == $b);
@@ -276,4 +277,174 @@ var_dump($a > $b);
 $a = 2 ** 4;
 $b = 4 ** 2;
 var_dump($a != $b);
+//Lesson 44. Task 1
+$i = 1;
+while($i <= 100) {
+    echo $i;
+    $i++;
+}
+//Lesson 44. Task 2
+$i = 11;
+while($i <= 33) {
+    echo $i;
+    $i++;
+}
+//Lesson 44. Task 3
+$i = 2;
+while($i <= 100) {
+    echo $i;
+    $i += 2;
+}
+//Lesson 44. Task 4
+$i = 1;
+while($i <= 100) {
+    echo $i;
+    $i += 2;
+}
+//Lesson 44. Task 5
+$i = 30;
+while($i >= 0) {
+    echo $i;
+    $i--;
+}
+//Lesson 45. Task 1
+$i = 10;
+
+while ($i <= 1) {
+    echo $i;
+    $i--;
+}
+//Lesson 45. Task 2
+$i = 10;
+
+while ($i >= 1) {
+    echo $i;
+    $i--;
+}
+//Lesson 45. Task 3
+$i = 10;
+
+while ($i >= 0) {
+    echo $i;
+    $i--;
+}
+//Lesson 45. Task 4
+$i = 10;
+
+while ($i >= 0) {
+    echo $i;
+    $i--;
+}
+//Lesson 45. Task 5
+$i = 10;
+
+while ($i >= 0) {
+    echo $i;
+    $i--;
+}
+//Lesson 46. Task 1
+echo '<br>';
+for($i = 1; $i <= 100; $i++) {
+    echo $i;
+}
+//Lesson 46. Task 2
+echo '<br>';
+for($i = 11; $i <= 33; $i++) {
+    echo $i;
+}
+//Lesson 46. Task 3
+echo '<br>';
+for($i = 2; $i <= 100; $i += 2) {
+    echo $i;
+}
+//Lesson 46. Task 4
+echo '<br>';
+for($i = 1; $i <= 100; $i += 2) {
+    echo $i;
+}
+//Lesson 46. Task 5
+echo '<br>';
+for($i = 100; $i >= 0; $i--) {
+    echo $i;
+}
+//Lesson 47. Task 1
+echo '<br>';
+$result= 1;
+for($i = 1; $i <= 20; $i++) {
+    $result *= $i;
+}echo $result;
+//Lesson 47. Task 2
+echo '<br>';
+$result = 0;
+for($i = 2; $i <= 100; $i += 2) {
+    $result += $i;
+}echo $result;
+//Lesson 47. Task 3
+echo '<br>';
+$result = 0;
+for($i = 1; $i <= 100; $i += 2) {
+    $result += $i;
+}echo $result;
+//Lesson 48. Task 1
+echo '<br>';
+$arr = ['a', 'b', 'c', 'd', 'e'];
+foreach ($arr as $result) {
+    echo $result . '<br>';
+}
+//Lesson 48. Task 2
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+$result = 0;
+foreach ($arr as $elem) {
+    $result += $elem;
+}echo $result;
+//Lesson 48. Task 3
+echo '<br>';
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+$result = 0;
+foreach ($arr as $elem) {
+    $result += $elem;
+}echo $result / count($arr);
+//Lesson 49. Task 1
+$arr = ['green' => 'зеленый', 'red' =>
+    'красный','blue' => 'голубой'];
+foreach ($arr as $k => $v){
+    echo $k . '-' . $v . '<br>';
+}
+//Lesson 49. Task 2
+$arr = ['user1' => 30, 'user2' => 32, 'user3' => 33];
+foreach ($arr as $k => $v) {
+    echo $k . '-' . $v . '<br>';
+}
+//Lesson 50. Task 1
+$arr = [1, 2, 3, 4, 5];
+foreach ($arr as $elem) {
+    if($elem % 2 != 0) {
+        echo $elem;
+    }
+}
+//Lesson 50. Task 2
+$arr = [2, 5, 9, 15, 1, 4];
+foreach($arr as $elem) {
+    if($elem > 3 and $elem < 10) {
+        echo $elem;
+    }
+}echo '<br>';
+//Lesson 50. Task 3
+$arr = [ -5, 6, 5, 8, -3];
+$result = 0;
+foreach($arr as $elem) {
+    if($elem >= 0) {
+        $result += $elem;
+    }
+}echo $result;
+//Lesson 50. Task 4
+$arr = [10, 20, 30, 50, 235, 3000];
+foreach ($arr as $v) {
+    switch ($v[0]) {
+        case 1: case 2: case 5:
+        echo "[ ".$v." ]"; break;
+    }
+}
+//Lesson 50. Task 5
+//Lesson 50. Task 6
 
