@@ -462,5 +462,32 @@ foreach ($arr as $elem => $value) {
         continue;
     }echo $value . '</br>';
 }
+//Lesson 53. Task 1
+$arr = [1, 5, 7, 3, 0, 4, 256, 128];
+foreach($arr as $elem) {
+    if($elem == 0) {
+        break;
+    }echo $elem;
+
+}
+//Lesson 53. Task 2
+$arr = [1, 5, 7, 3, -1, 4, 256, 128];
+$sum = 0;
+foreach($arr as $elem) {
+    $sum += $elem;
+    if ($elem < 0) {
+        break;
+    }
+}echo $sum;
+//Lesson 53. Task 3
+$arr = [1, 2, 3, 4, 5,];
+$i = 0;
+foreach($arr as $elem) {
+    $i += 1;
+    if ($elem == 3) {
+        break;
+    }
+}echo $i;
+//Lesson 53. Task 4
 
 
