@@ -479,6 +479,7 @@ foreach($arr as $elem) {
         break;
     }
 }echo $sum;
+echo '<br>' . '</br>';
 //Lesson 53. Task 3
 $arr = [1, 2, 3, 4, 5,];
 $i = 0;
@@ -488,6 +489,74 @@ foreach($arr as $elem) {
         break;
     }
 }echo $i;
+echo '<br>' . '</br>';
 //Lesson 53. Task 4
+$counter = 1;
+$sum = 0;
+for($i = 1; $i <= 100; $i++) {
+    $sum += $i;
+    $counter += 1;
+    if($sum >= 100) {
+        break;
+    }
+}echo $counter;
+//Lesson 55. Task 1
+$arr = ['a', 'b', 'c', 'd', 'e'];
+$flag = false;
+foreach($arr as $elem) {
+    if ($elem == 'c') {
+        $flag = true;
+        break;
+    }
+}if($flag == true) {
+    echo 'yes';
+}else {
+    echo 'no';
+}
+//Lesson 56. Task 1
+$num = 43;
+$flage = true;
+for($i = 2; $i < $num; $i++) {
+    if($num % $i === 0) {
+        $flag = false;
+        break;
+    }
+}var_dump($flag);
+//Lesson 57. Task 1
+$num = 5;
+$i = 0;
+while ($num < 1000) {
+    $num = $num * 3;
+    $i += 1;
+}
+echo $num;
+echo $i;
+echo '<br>';
+//Lesson 57. Task 2
+for($num = 5, $i = 0; $num < 1000; $num = $num * 3, $i++);
+echo $num . $i;
+//Lesson 58. Task 1
+$str = '';
+for($i = 0; $i < 5; $i++) {
+    $str .= '0';
+}echo $str;
+//Lesson 58. Task 2
+$str = '';
+for($i = 0; $i < 10; $i++) {
+    $str .= $i;
+}echo $str;
+//Lesson 58. Task 3
+$str = '';
+for($i = 9; $i > 0; $i--) {
+    $str .= $i;
+}echo $str;
+//Lesson 58. Task 4
+$str = '';
+for($i = 0; $i <10; $i++) {
+    $str .= $i . '-';
+}echo $str;
+echo '<br>';
+//Lesson 59. Task 1
 
+//Lesson 59. Task 2
 
