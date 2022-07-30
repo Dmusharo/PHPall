@@ -439,12 +439,28 @@ foreach($arr as $elem) {
 }echo $result;
 //Lesson 50. Task 4
 $arr = [10, 20, 30, 50, 235, 3000];
-foreach ($arr as $v) {
-    switch ($v[0]) {
-        case 1: case 2: case 5:
-        echo "[ ".$v." ]"; break;
+foreach ($arr as $elem) {
+    $elem = (string) $elem;
+    if($elem[0] == 1 || $elem[0] == 2 || $elem[0] == 5) {
+        echo ' ' . $elem . ' ';
     }
 }
 //Lesson 50. Task 5
+$arr = [ 0 => 'Monday', 1 => 'Tuesday', 2 => 'Wednesday', 3 => 'Thursday', 4 => 'Friday', 5 => 'Saturday', 6 => 'Sunday'];
+foreach ($arr as $elem => $value) {
+    if($value == 'Saturday' or $value == 'Sunday') {
+        echo '<b>' . $value . '</b>' . '<br>';
+        continue;
+    }echo $value . '<br>';
+}
 //Lesson 50. Task 6
+$arr = [ 0 => 'Monday', 1 => 'Tuesday', 2 => 'Wednesday', 3 => 'Thursday', 4 => 'Friday', 5 => 'Saturday', 6 => 'Sunday'];
+$day = 5;
+foreach ($arr as $elem => $value) {
+    if ($elem == $day) {
+        echo '<i>' . $value . '</i>' . '<br>';
+        continue;
+    }echo $value . '</br>';
+}
+
 
