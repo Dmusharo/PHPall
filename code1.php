@@ -605,3 +605,106 @@ for($i = 0; $i<100;$i++) {
         $arr[] = $i +1;
     }
 }var_dump($arr);
+//Lesson 61. Task 1
+$arr = ['a', 'b', 'c', 'd', 'e'];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    echo $arr[$i];
+}echo '<br>';
+//Lesson 61. Task 2
+$arr = ['a', 'b', 'c', 'd', 'e'];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    if($i == 4) {
+        break;
+    }echo $arr[$i];
+}
+//Lesson 61. Task 3
+$arr = [1, 2, 3, 4, 5, 6, 7, 8];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    if($i == 4) {
+        break;
+    }echo $arr[$i];
+}
+//Lesson 61. Task 4
+$arr = [1, 2, 3, 4, 5, 6, 7, 8];
+$sum = 0;
+$length = count($arr);
+
+for ($i = 1; $i < $length; $i++) {
+    $sum += $arr[$i];
+}
+echo $sum;
+echo '<br>';
+//Lesson 62. Task 1
+$arr = [1, 2, 3, 4, 5];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    $arr[$i] **= 2;
+}var_dump($arr);
+//Lesson 62. Task 2
+$arr = [1, 2, 3, 4, 5];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    $arr[$i] -= 1;
+}var_dump($arr);
+//Lesson 62. Task 3
+$arr = [1, 2, 3, 4, 5];
+$length = count($arr);
+for($i = 0; $i < $length; $i++) {
+    $arr[$i] += 10;
+}var_dump($arr);
+//Lesson 63. Task 1
+$arr = [
+    'employee1' => 100,
+    'employee2' => 200,
+    'employee3' => 300,
+    'employee4' => 400,
+    'employee5' => 500,
+    'employee6' => 600,
+    'employee7' => 700,
+];
+$length = count($arr);
+foreach($arr as $elem) {
+    $elem *= 1.1;
+    echo $elem . '<br>';
+}echo '<br>';
+//Lesson 63. Task 2
+$arr = [
+    'employee1' => 100,
+    'employee2' => 200,
+    'employee3' => 300,
+    'employee4' => 400,
+    'employee5' => 500,
+    'employee6' => 600,
+    'employee7' => 700,
+];
+$length = count($arr);
+foreach($arr as $elem) {
+    if ($elem <= 400) {
+        $elem *= 1.1;
+        echo $elem . '<br>';
+    }
+}
+//Lesson 63. Task 3
+$arr = [1 => 6, 2 => 7, 3 => 8, 4 => 9, 5 => 10];
+$sumKey = 0;
+$sumValue = 0;
+foreach ($arr as $key => $value) {
+    $sumValue += $value;
+    $sumKey += $key;
+}echo $sumKey / $sumValue;
+echo '<br>';
+//Lesson 63. Task 4
+$arr = ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5];
+
+//Lesson 63. Task 5
+$arr = [1, 2, 3, 4, 5];
+$length = count($arr);
+
+for ($i = 1; $i < $length; $i++) {
+    echo $arr[$i - 1] + $arr[$i];
+}
+
+
