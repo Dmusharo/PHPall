@@ -696,13 +696,6 @@ foreach ($arr as $key => $value) {
     $sumKey += $key;
 }echo $sumKey / $sumValue;
 echo '<br>';
-//Lesson 63. Task 4
-$arr = ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5];
-$arrF = [];
-$arrS = [];
-foreach($arr as $key => $value) {
-    $arrF = $arr[$key];
-}echo $arrF;
 
 //Lesson 63. Task 5
 //$arr = [1, 2, 3, 4, 5];
@@ -711,5 +704,6 @@ foreach($arr as $key => $value) {
 //for ($i = 1; $i < $length; $i++) {
 //    echo $arr[$i - 1] + $arr[$i];
 //}
+
 
 
