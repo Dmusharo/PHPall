@@ -178,3 +178,10 @@ foreach ($arr as $value) {
     $sum += $value;
 }echo $sum / count($arr);
 //Lesson 68. Task 11
+$n = 5;
+$factorial = 1;
+
+for ($i = 1; $i <= $n; $i++) {
+    $factorial *= $i;
+}
+echo $factorial;
