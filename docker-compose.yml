@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: lesson-nginx
+    depends_on:
+      - php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www
+      - .docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    networks:
+      - bridge
+
+  php:
+    build: .docker/php
+    container_name: lesson-php
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/var/www
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    driver: bridge
