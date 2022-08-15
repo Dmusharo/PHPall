@@ -176,7 +176,7 @@ echo str_shuffle($str);
 //Task 39
 $str = 'abcdefghiklmnopqrstvxyz';
 $shuffle = str_shuffle($str);
-echo substr($shuffle, 0, 6)
+echo substr($shuffle, 0, 6);
 //Task 40
 $str = "12345678";
 echo number_format($str, 0, "", " ");
@@ -187,9 +187,87 @@ for ($i=1; $i <= 9; $i++) {
     $repead = str_repeat($str, $i) . "<br>";
     echo $repead;
 }
-//Task 41
+//Task 42
 
 for ($i=1; $i <= 9; $i++) {
     echo str_repeat($i, $i) . '<br>';
 }
-//Task 42
+//Task 43
+$str = 'html, <b>php</b>, js';
+echo strip_tags($str);
+//Task 44
+$str = '<h2>Заголовок h2</h2>
+<p>Это еще один абзац.
+    Это обычный текст, а это <i>курсивный</i> текст.</p>
+<p>И еще один абзац. Это обычный текст, а это <b>жирный</b> текст.</p>
+<h3>Заголовок h3</h3>';
+echo strip_tags($str, '<b><b/><i></i>');
+//Task 45
+$str = 'html, <b>php</b>, js';
+echo htmlspecialchars($str);
+//Task 46
+echo '<br>';
+echo ord('a');
+echo '<br>';
+echo ord('b');
+echo '<br>';
+echo ord('c');
+echo '<br>';
+echo ord(' ');
+//Task 47
+echo chr(33);
+//Task 48
+$str = chr(90);
+echo $str;
+//Task 49
+$str = '';
+$len = 15;
+for ($i = 0; $i < $len; $i++)
+    $str .= chr(rand(97,122));
+echo $str;
+//Task 50
+$letter = 'C';
+if(ord($letter) >= 65 and ord($letter) <= 90) {
+    echo 'Big one';
+}
+elseif (ord($letter) >= 91 and ord($letter) <= 122) {
+    echo 'Small one';
+}
+//Task 52
+$str = 'ab-cd-ef';
+echo strchr($str, "-");
+//Task 53
+$str = 'ab-cd-ef';
+echo strrchr($str, "-");
+//Task 54
+$str = 'ab--cd--ef';
+echo strstr($str, "--");
+//Task 55
+$str = 'var_test_text';
+$strF = str_replace("_", " ", $str);
+$strS = ucwords($strF);
+$strT = str_replace(["V", " "], ["v", ""], $strS);
+echo $strT;
+//Task 55
+$arr = explode('_', 'var_test_text');
+$str = '';
+foreach ($arr as $key=>$val) {
+    if($key == 0) {
+        $str .= $val;
+    } else {
+        $str .=  ucfirst($val);
+    }
+}
+echo $str;
+//Task 56
+
+$arr = [];
+for ($i = 1; $i <= 10; $i++) {
+    $arr[] = rand(0, 1000);
+}
+var_dump($arr);
+foreach($arr as $value) {
+    if (strpos($value, "3") !== false) {
+        echo $value;
+    }
+}
