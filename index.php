@@ -16,9 +16,7 @@
 </form>
 </body>
 </html>
-<?php
 
-?>
 
 
 
