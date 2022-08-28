@@ -1,5 +1,5 @@
 <?php
-$result = require __DIR__ .'/calc.php';
+$result = require __DIR__ . '/calc.php';
 ?>
 <html lang="eu">
 <head>
