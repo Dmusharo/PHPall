@@ -22,7 +22,6 @@ const USERS = [
 function login($login, $password){
     foreach (USERS as $user) {
         if ($user['login'] == $login && $user['password'] == $password) {
-//            session_start();
             $_SESSION['role'] = $user['role'];
             $_SESSION['auth'] = 1;
             return true;
@@ -34,5 +33,7 @@ function logout()
 {
     if (isset($_SESSION['auth'])) {
         session_destroy();
+        unset($_SESSION);
+        header("Location: http://local.php:8080/index.php");
     }
 }
