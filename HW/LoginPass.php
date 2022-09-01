@@ -14,7 +14,8 @@ if($login && $password) {
         $errorMessage = 'User not found';
     }
 
-    if(!isvalidPassword($user['password'], $password)){
+
+    elseif (!isvalidPassword($user['password'], $password)){
         $errorMessage = 'Password invalid';
     }
 
@@ -32,9 +33,10 @@ elseif ($auth === true) {
     echo 'Success login';
 }
 
-else {?>
+else {
+    ?>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
     <body>
 <form action="" method="post">
     <label for="login" >Login</label>

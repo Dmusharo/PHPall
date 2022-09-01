@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Montserrat, sans-serif;
     display: flex;
@@ -27,4 +28,15 @@ input {
     border-radius: 10px;
 
 
+}
+h1 {
+    text-align: left;
+    color: blue;
+    font-size: 40px;
+
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+    justify-content: center;
 }

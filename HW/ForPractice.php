@@ -26,7 +26,7 @@ if (isset($_GET['submit'])) {
 </head>
 <body>
 
-<form action="index.php" method="get">
+<form action="../index.php" method="get">
     NUM: <input type="text" name="num">
     <input type="submit" value="Lets go" name="submit">
 </form>
