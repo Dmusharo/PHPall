@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 include "auth_function.php";
 if(isset($_POST['login']) && $_POST['password']) {
