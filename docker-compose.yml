@@ -22,7 +22,20 @@ services:
       - ./:/var/www
     networks:
       - bridge
+  db:
+    build: .docker/db
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: 123456
+    volumes:
+      - ./databases:/var/lib/mysql
 
+
+  adminer:
+    build: .docker/adminer
+    restart: always
+    ports:
+      - 6080:8080
 networks:
   bridge:
     driver: bridge
