@@ -21,7 +21,7 @@ const ARTICLES = [
     ],
     [
         'name' => 'Nails',
-        'text' => 'these cases are perfectly simple and easy to distinguish.',
+        'text' => 'these cases are perfectly simple and easy to distinguish.Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil andNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil andwhich toil andNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil andwhich toil andNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil andwhich toil andNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and',
         'date' => '1-09-2022',
         'comments' => [[
             'username' => 'Dmiriy',

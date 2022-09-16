@@ -12,6 +12,11 @@ if (isset($_POST['logout'])) {
     logout();
 }
 
+if(isset($_SESSION['auth_user']) && $_SESSION['auth_user']['role'] === 'manager') {
+    $articles = getAllArticles();
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +46,36 @@ if (isset($_POST['logout'])) {
         { ?>
                 <link href="style.css" rel="stylesheet">
             <h3> Hello, <?php echo $_SESSION['auth_user']['username']; ?></h3>
+
+            <article class="all-browsers">
+            <h1>Articles</h1>
+
+
+
+
+<?php foreach ($articles ?? [] as $article) {?>
+
+                <article class="browser">
+                    <div style="overflow: auto; width:340px; height:100px;">
+                    <h5><?php echo $article['name']; ?></h5>
+                    <h5><?php echo $article['date']; ?></h5>
+                    <p><?php echo $article['text']; ?></p>
+
+                        <article class="all-browsers">
+                            <h1>Comments</h1>
+
+                        <?php foreach ($article['comments'] as $comment) {?>
+                            <h5><?php echo $comment['username']; ?></h5>
+                            <p><?php echo $comment['text']; ?></p>
+                        <?php } ?>
+                        </article>
+                    </div>
+                </article>
+
+            </article>
+
+
+        <?php } ?>
 
         <form method="post">
                 <button type="submit" name="logout">Logout</button>
