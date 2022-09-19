@@ -1,0 +1,53 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: start-nginx
+    depends_on:
+      - php
+    ports:
+      - "8081:80"
+    volumes:
+      - ./:/var/www
+      - .docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    networks:
+      - bridge
+
+  php:
+    build: .docker/php
+    container_name: start-php
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/var/www
+    networks:
+      - bridge
+
+  db:
+    container_name: start-mysql
+    image: mysql:8.0
+    restart: always
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - .
+    - MYSQL_DATABASE=db
+    volumes:
+    - ./data/mysql:/var/lib/mysql
+    ports:
+    - "3306:3306"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    networks:
+    - bridge
+
+  adminer:
+    container_name: start-adminer
+    image: adminer:latest
+    restart: always
+    ports:
+    - "8080:8080"
+    networks:
+    - bridge
+
+networks:
+  bridge:
+    driver: bridge
