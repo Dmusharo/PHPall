@@ -27,7 +27,7 @@ if (isset($_POST['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Форма реєстрації</title>
+    <title>Обліковий запис</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -41,5 +41,7 @@ if (isset($_POST['logout'])) {
         </h4>
         <button class="btn btn-success" type="submit" name="logout">Logout</button>
     </form>
+    <form action="delete.php" method="post">
+        <button class="btn btn-success" type="submit">Видалити користувача</button>
+    </form>
 </div>
-</html>
