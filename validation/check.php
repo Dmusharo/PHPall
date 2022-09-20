@@ -22,6 +22,13 @@ if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['pass
         die("Connection failed: " . $connetion->connect_error);
     }
     $pass = md5($pass . "fdoief23466");
+    $resutl = $connetion->query("SELECT `email` FROM `users` WHERE `email` = '$email'");
+    $myrow = $resutl->fetch_assoc();
+    if (!empty($myrow['email'])) {
+        if ($myrow['email'] == $email) {
+            echo "Такий користувач уже існує";
+        }
+    }
     $connetion->query("INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`) VALUES ('$firstName','$lastName','$email','$pass')");
     $connetion->close();
 }
