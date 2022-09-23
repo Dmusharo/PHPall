@@ -14,11 +14,10 @@
         // Query
         $query = "SELECT * FROM users WHERE email='$mail'";
         $mailinbase=mysqli_fetch_assoc(mysqli_query($connection,$query));
-        // Check
+        // Check if e-mail is had in the database
         if (empty($mailinbase)) {
             $connection->query("INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`) VALUES ('$name', '$surname', '$mail', '$password');");
             echo "Hello, ".$name;
-
              } else {
             echo "Пользователь с таким E-mail  уже существует в базе";
         }
@@ -35,7 +34,7 @@
         <br>
         Surname:<input type="text" name="surname" required>
         <br>
-        E-mail:<input type="text" name="mail" required>
+        E-mail:<input type="email" name="mail" required>
         <br>
         Password:<input type="password" name="password" required>
         <br>
