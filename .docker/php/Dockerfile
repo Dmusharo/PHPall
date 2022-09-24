@@ -6,7 +6,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 RUN apt-get install libzip-dev zip libicu-dev libpq-dev -y
 
-RUN docker-php-ext-install zip && docker-php-ext-configure intl && docker-php-ext-install intl && docker-php-ext-install bcmath
+RUN docker-php-ext-install zip && docker-php-ext-configure intl && docker-php-ext-install intl && docker-php-ext-install bcmath && docker-php-ext-install mysqli
 
 COPY www.conf /usr/local/etc/php-fpm.d/www.conf
 
