@@ -11,7 +11,7 @@ if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['pass
         echo "Недопустима довжина прізвища";
         exit();
     } elseif (mb_strlen($email < 1) || mb_strlen($email) > 129) {
-        echo "Недопустима довжина прізвища";
+        echo "Недопустима довжина почти";
         exit();
     } elseif (mb_strlen($pass < 2) || mb_strlen($pass) > 257) {
         echo "Недопустима довжина пароля";
@@ -25,9 +25,8 @@ if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['pass
     if ($connetion->connect_error) {
         die("Connection failed: " . $connetion->connect_error);
     }
-
     $resutl = $connetion->query("SELECT `email` FROM `users` WHERE `email` = '$email'");
-    $myrow = $resutl->fetch_assoc();
+    $myrow = $resutl->fetch_array();
     if (!empty($myrow['email'])) {
         if ($myrow['email'] == $email) {
             echo "Такий користувач уже існує";
@@ -35,5 +34,8 @@ if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['pass
     }
     $pass = md5($pass . "fdoief23466");
     $connetion->query("INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`) VALUES ('$firstName','$lastName','$email','$pass')");
+    if (empty($myrow['email'])) {
+        echo "Зареєстровано";
+    }
     $connetion->close();
 }
