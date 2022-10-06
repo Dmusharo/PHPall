@@ -18,3 +18,6 @@ echo preg_replace('#ab{0,3}a#','!',$str);
 //3 Напишите регулярку, которая найдет строки вида 'aba', в которых 'b' встречается более четырех раз (включительно)
 $str = 'aa aba abba abbba abbbba abbbbba';
 echo preg_replace('#abbbb+a#','!',$str);
+
+$str = 'aa aba abba abbba abbbba abbbbba';
+echo preg_replace('#ab{4,}+a#','!',$str);
