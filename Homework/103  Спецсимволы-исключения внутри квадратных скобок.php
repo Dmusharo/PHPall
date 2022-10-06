@@ -6,7 +6,8 @@
 $str = 'x[]z x{}z x.z x()z';
 echo preg_replace('#x[\(\){\}[\]]+z#', '!', $str);
 
-//2  ???
+//2
 //Напишите регулярку, которая найдет строки в любых скобках и заменят их на '!'.
+
 $str = '[abc] {abc} abc (abc) [abc]';
-echo preg_replace('#[\]abc[/]#', '!', $str);
+echo preg_replace('#[\{\}\[\]\(\)]abc[\{\}\[\]\(\)]#', '!', $str);
