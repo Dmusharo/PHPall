@@ -5,15 +5,18 @@
 //Даны строки с датами, в которых год может изменяться от 1990 до 2099:
 //Для каждой даты положите день в первый карман, месяц во второй, а последние две цифры года - в третий.
 
-$str = $arr = ['30-11-1995', '29-10-1990', '31-12-2025'];
-$str = null;
-foreach ($arr as $elem => $key) {
-    $str .= $key . ' ';
+$arr = [ '30-11-1995', '29-10-1990','31-12-2025','31-12-2025' ];
+$str=null;
+foreach ($arr as $elem=>$key)
+{
+    $str.=$key.' ';
 }
-echo '<br>' . $str . '<br>';
-preg_match_all('#(?<days>\d{2})-(?<month>\d{2})-(?<years>19(9\d)|20([0-9]\d))#', $str, $res);
-print_r($res[1]);
-echo '<br>';
-print_r($res[2]);
-echo '<br>';
-print_r($res[3]);
+echo '<br>'. $str . '<br>';
+preg_match_all('#(?<days>\d{2})-(?<month>\d{2})-(?<years>19(9\d)|20([0-9]\d))#',$str,$res);
+$arraycount=count($res);
+for ($i=0;$i<$arraycount;$i++){
+    unset($res[$i]);
+}
+echo '<pre>';
+var_dump($res);
+echo '<pre>';
