@@ -1,0 +1,14 @@
+The U.S. Department of Justice (DOJ) has indicted  California-based John Khuu for allegedly laundering $5.4 million in proceeds from drug trafficking by using Bitcoin.
+
+According to the charges, Khuu sold counterfeit pharmaceutical drugs and controlled substances on dark web markets. He received BTC as payment from customers for their purchases.
+
+To convert the funds for fiat, Khuu and his accomplices created dozens of accounts with top U.S. banks including Citibank, Bank of America, and JPMorgan Chase.
+
+The accused allegedly laundered about $5.4 million worth of BTC over the period of his operation.
+
+Khuu was arrested on Aug. 19, 2022, by the DOJ. He is currently facing a two count-charge for conspiracy in money laundering and unlawful importation of controlled substances. If proven guilty, he could risk spending up to 40 years in imprisonment.
+
+Crypto-related laundering on the decline
+Instances, where crypto was used in the dark web market, have painted the industry in a  bad light before authorities. In 2020, the DOJ busted Ohio-based Larry Harmon for allegedly laundering over $300 million using Bitcoin.
+
+In recent times, the narrative is changing for good. A Chainanysis report showed that in 2021, only about 0.05% of all crypto transactions were linked to money laundering, compared to 5% laundered through fiat currency.
