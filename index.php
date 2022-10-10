@@ -1,6 +1,6 @@
 <?php
 
-require 'Homework/165 Подключение файлов в PHP.php';
-echo cube(3)+square(5);
+$month=require 'Homework/167 Запись подключения в переменную PHP.php';
+var_dump($month);
 ?>
 
