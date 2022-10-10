@@ -1,4 +1,6 @@
 <?php
-include "Homework/165  Запись вставки в переменную в PHP.php";
+
+require 'Homework/165 Подключение файлов в PHP.php';
+echo cube(3)+square(5);
 ?>
 
