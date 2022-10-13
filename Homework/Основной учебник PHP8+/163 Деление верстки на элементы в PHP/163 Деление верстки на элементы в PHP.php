@@ -9,10 +9,10 @@
 </head>
 <body>
 <header>
-    <?php include 'Homework/163 Деление верстки на элементы в PHP/header.php'?>
+    <?php include 'Homework/163 Деление верстки на элементы в PHP/header.php' ?>
 </header>
 <aside>
-    <?php include 'Homework/163 Деление верстки на элементы в PHP/sidebar.php'?>
+    <?php include 'Homework/163 Деление верстки на элементы в PHP/sidebar.php' ?>
 </aside>
 <main>
     content
