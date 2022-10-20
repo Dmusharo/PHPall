@@ -12,3 +12,6 @@ WHERE условие_выборки
 
 
  */
+//SELECT goods.name as tovar,Cartegory.name as Category1
+//FROM goods
+//LEFT JOIN Cartegory ON Cartegory.id_category=goods.id_cat
