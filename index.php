@@ -1,25 +1,32 @@
 <meta charset="utf-8">
 <?php
-// connection to database
-$user = "root"; // имя пользователя
-$pass = "password"; // пароль
-$host = "db"; //имя хоста
-$name = "mydb"; //имя базы данныз
-$connection = new mysqli($host, $user, $pass, $name);
-mysqli_query($connection, "SET NAMES 'utf8'");
+if (!empty($_POST)){
+    //GET data
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $salary = $_POST['salary'];
+    var_dump($_POST);
+    //connection to database
+    $user = "root"; // имя пользователя
+    $pass = "password"; // пароль
+    $host = "db"; //имя хоста
+    $namebase = "mydb1"; //имя базы данныз
+    $connection = new mysqli($host, $user, $pass, $namebase);
+    mysqli_query($connection, "SET NAMES 'utf8'");
+    $query = "INSERT INTO users1 SET  age='$age', salary='$salary', name='$name'";
+    $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
-$query='SELECT COUNT(*) as count FROM users where salary>300 OR age=23';
-$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-$data=mysqli_fetch_assoc($result);
-var_dump($data);
-//Формируем массив в цикле
-//echo '----------------------'.'<br>';
-//for ($data=[];$row=mysqli_fetch_assoc($result); $data[]=$row);
-//echo '<pre>';
-//var_dump($data);
-//echo '<pre>';
-
-
+}
 
 ?>
+<form action="" method="POST">
+    Name:<input name="name" value="<?php echo  $_POST['name']?>"><br>
+    Age:<input name="age" value="<?php echo $_POST['age']?>"><br>
+    Salary:<input name="salary" value="<?php echo $_POST['salary']?>"><br>
+    <input type="submit"><br>
+</form>
+
+
+
+
 
