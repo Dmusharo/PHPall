@@ -59,3 +59,4 @@ $student->setAge(25);      // установим возраст в 25
 
 $student->addOneYear();    // увеличим возраст на единицу
 echo $student->getAge();   // выведет 26
+
